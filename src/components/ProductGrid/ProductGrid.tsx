@@ -13,7 +13,7 @@ export const ProductGrid: React.FC<ProductGridProps> = ({ products }) => {
   const [selectedTag, setSelectedTag] = useState<string>('All');
   const [stockFilter, setStockFilter] = useState<'all' | 'in-stock' | 'out-of-stock'>('all');
   const [sortBy, setSortBy] = useState<SortOption>('recommended');
-  const [visibleCount, setVisibleCount] = useState<number>(12);
+  const [visibleCount, setVisibleCount] = useState<number>(24);
   const [showOutOfStockSeparated] = useState<boolean>(true);
 
   // Available tags dynamically derived from products
