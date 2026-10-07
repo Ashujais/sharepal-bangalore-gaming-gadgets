@@ -6,7 +6,7 @@ import { GamingGadgetsPage } from './pages/GamingGadgetsPage';
 export const App: React.FC = () => {
   return (
     <CartProvider>
-      <BrowserRouter>
+      <BrowserRouter basename={import.meta.env.BASE_URL}>
         <Routes>
           {/* Main required reference route */}
           <Route path="/bangalore/gaming-gadgets-on-rent" element={<GamingGadgetsPage />} />
